@@ -1,0 +1,264 @@
+#cs1300-gallery {
+  background-color: rgb(219, 146, 146);
+}
+
+@viewport {
+  width: device-width;
+  zoom: 1;
+}
+
+@media screen and (max-width: 665px) {
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .half-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .gallery-item {
+    font-size: 2em;
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 15px;
+    position: relative;
+    border-radius: 25px;
+    min-width: 160px;
+  }
+  .logo {
+    display: block;
+    margin-left: 30px;
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .mobile-only {
+    display: inline;
+  }
+  .desktop-only {
+    display: none;
+  }
+
+  .menu {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+    display: inline;
+  }
+  .nav-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 666px) {
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .half-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
+  }
+
+  .gallery-item {
+    font-size: 2em;
+    height: 200px;
+    width: 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 15px;
+    position: relative;
+    border-radius: 25px;
+    min-width: 200px;
+  }
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .mobile-only {
+    display: none;
+  }
+  .desktop-only {
+    display: inline;
+  }
+
+  .menu {
+    display: none;
+  }
+  .nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+
+.bottom-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.button {
+  font-size: 2em;
+  height: 45px;
+  width: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 15px;
+  position: relative;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.long-button {
+  font-size: 2em;
+  height: 45px;
+  width: 240px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 15px;
+  position: relative;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.nav-button {
+  font-size: 2em;
+  height: 45px;
+  width: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 15px;
+  position: relative;
+  cursor: pointer;
+  background-color: #790000;
+  border-radius: 20px;
+}
+
+.button-text {
+  position: absolute;
+  padding-left: 10px;
+  bottom: 0;
+  font-size: large;
+  margin-top: 12px;
+  top: 0;
+  cursor: pointer;
+}
+
+.nav-text {
+  position: absolute;
+  padding-left: 10px;
+  bottom: 0;
+  font-size: large;
+  margin-top: 12px;
+  top: 0;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+.rectangle {
+  fill: rgb(255, 255, 255);
+  opacity: 0.7;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+}
+
+.strip {
+  border-radius: 25px;
+  width: 160px;
+  height: 100%;
+}
+
+.title-text {
+  position: absolute;
+  padding-left: 10px;
+  bottom: 0;
+  font-size: large;
+  width: 150px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  line-height: 1em;
+  max-height: 2em;
+  top: 0;
+}
+
+.size-text {
+  position: absolute;
+  padding-left: 10px;
+  font-size: large;
+  top: 45px;
+}
+
+.available-text {
+  position: absolute;
+  padding-left: 10px;
+  font-size: large;
+  top: 80px;
+}
+
+.price-text {
+  position: absolute;
+  padding-left: 10px;
+  font-size: large;
+  top: 120px;
+}
+
+.input {
+  position: absolute;
+  width: 40px;
+  top: 165px;
+  left: 10px;
+}
+
+.cart {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 120px;
+  bottom: 6px;
+  cursor: pointer;
+}
+
+.icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 57px;
+  bottom: 6px;
+  cursor: pointer;
+}
+.long-icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 200px;
+  bottom: 6px;
+  cursor: pointer;
+}
